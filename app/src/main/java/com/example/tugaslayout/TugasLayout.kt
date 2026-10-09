@@ -45,4 +45,5 @@ fun TugasLayout(modifier: Modifier = Modifier) {
                 isCursive = true
             )
 
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_cards)))
         }
