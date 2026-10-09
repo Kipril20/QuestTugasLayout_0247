@@ -26,4 +26,7 @@
     <string name="card_4_name">Ahmad Alfian</string>
     <string name="card_4_phone">085436874190</string>
     <string name="card_4_location">Gamping, Sleman</string>
+
+    <!-- Footer -->
+    <string name="footer_copyright">Copyright, 2026</string>
 </resources>
