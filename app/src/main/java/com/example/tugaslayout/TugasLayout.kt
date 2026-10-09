@@ -54,4 +54,7 @@ fun TugasLayout(modifier: Modifier = Modifier) {
                 bgCardColorRes = R.color.card_2_bg,
                 addressColorRes = R.color.text_yellow
             )
+
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_cards)))
+
         }
