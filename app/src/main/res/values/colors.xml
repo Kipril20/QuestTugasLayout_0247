@@ -4,5 +4,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- App Screen Colors -->
+    <color name="screen_background">#FFFAF8FF</color>
+    <color name="header_title_color">#FF000000</color>
+    <color name="header_subtitle_color">#FF000000</color>
+    <color name="footer_text_color">#FF000000</color>
 
 </resources>
