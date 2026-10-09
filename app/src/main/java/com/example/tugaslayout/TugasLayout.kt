@@ -15,4 +15,5 @@ fun TugasLayout(modifier: Modifier = Modifier) {
                     horizontal = dimensionResource(id = R.dimen.padding_screen_horizontal),
                     vertical = dimensionResource(id = R.dimen.padding_screen_vertical)
                 ),
+            horizontalAlignment = Alignment.CenterHorizontally
 }
