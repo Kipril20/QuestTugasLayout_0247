@@ -26,4 +26,12 @@ fun TugasLayout(modifier: Modifier = Modifier) {
             )
 
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_header_subtitle)))
+
+            Text(
+                text = stringResource(id = R.string.header_subtitle),
+                color = colorResource(id = R.color.header_subtitle_color),
+                fontSize = with(LocalDensity.current) { dimensionResource(id = R.dimen.text_size_subtitle).toSp() },
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            )
 }
