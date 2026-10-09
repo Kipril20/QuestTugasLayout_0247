@@ -57,4 +57,11 @@ fun TugasLayout(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_cards)))
 
+            ProfileCard(
+                nameRes = R.string.card_3_name,
+                phoneRes = R.string.card_3_phone,
+                addressRes = R.string.card_3_location,
+                bgCardColorRes = R.color.card_3_bg,
+                addressColorRes = R.color.text_white
+            )
         }
