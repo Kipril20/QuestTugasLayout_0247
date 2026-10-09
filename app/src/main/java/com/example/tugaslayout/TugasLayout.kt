@@ -36,4 +36,13 @@ fun TugasLayout(modifier: Modifier = Modifier) {
             )
 
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_header_cards)))
-}
+
+            ProfileCard(
+                nameRes = R.string.card_1_name,
+                addressRes = R.string.card_1_location,
+                bgCardColorRes = R.color.card_1_bg,
+                addressColorRes = R.color.text_yellow,
+                isCursive = true
+            )
+
+        }
