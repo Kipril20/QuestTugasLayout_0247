@@ -115,4 +115,70 @@ fun ProfileCard(
     phone: String? = null,
     @DrawableRes logoRes: Int = R.drawable.logo_umy,
     isCursive: Boolean = false
-) {}
+) {
+    Card(
+        modifier = modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(dimensionResource(id = R.dimen.card_corner_radius)),
+        colors = CardDefaults.cardColors(
+            containerColor = backgroundColor
+        ),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = dimensionResource(id = R.dimen.card_elevation)
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(id = R.dimen.padding_card_content)),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // Logo Sisi Kiri
+            Image(
+                painter = painterResource(id = logoRes),
+                contentDescription = stringResource(id = R.string.logo_umy_desc),
+                modifier = Modifier.size(dimensionResource(id = R.dimen.logo_size))
+            )
+
+            // Kolom Informasi Tengah (Nama, No HP jika ada, Alamat)
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = dimensionResource(id = R.dimen.spacing_card_content)),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = name,
+                    color = colorResource(id = R.color.text_white),
+                    fontSize = with(LocalDensity.current) { dimensionResource(id = R.dimen.text_size_card_name).toSp() },
+                    fontWeight = if (isCursive) FontWeight.Normal else FontWeight.Bold,
+                    fontFamily = if (isCursive) FontFamily.Cursive else FontFamily.Default
+                )
+
+                if (phone != null) {
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_card_text)))
+                    Text(
+                        text = phone,
+                        color = colorResource(id = R.color.text_cyan),
+                        fontSize = with(LocalDensity.current) { dimensionResource(id = R.dimen.text_size_card_phone).toSp() },
+                        fontWeight = FontWeight.Normal
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_card_text)))
+                Text(
+                    text = address,
+                    color = addressColor,
+                    fontSize = with(LocalDensity.current) { dimensionResource(id = R.dimen.text_size_card_location).toSp() },
+                    fontWeight = FontWeight.Normal
+                )
+            }
+
+            // Logo Sisi Kanan
+            Image(
+                painter = painterResource(id = logoRes),
+                contentDescription = stringResource(id = R.string.logo_umy_desc),
+                modifier = Modifier.size(dimensionResource(id = R.dimen.logo_size))
+            )
+        }
+    }
+}
