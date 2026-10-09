@@ -5,4 +5,6 @@
     <string name="header_title">Teknologi Informasi</string>
     <string name="header_subtitle">Universitas Muhammadiyah Yogyakarta</string>
 
+    <!-- Logo Description -->
+    <string name="logo_umy_desc">Logo Universitas Muhammadiyah Yogyakarta</string>
 </resources>
