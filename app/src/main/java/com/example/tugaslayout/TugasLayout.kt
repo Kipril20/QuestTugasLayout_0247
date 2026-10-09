@@ -182,3 +182,34 @@ fun ProfileCard(
         }
     }
 }
+
+@Composable
+fun ProfileCard(
+    modifier: Modifier = Modifier,
+    @StringRes nameRes: Int,
+    @StringRes addressRes: Int,
+    @ColorRes bgCardColorRes: Int,
+    @ColorRes addressColorRes: Int,
+    @StringRes phoneRes: Int? = null,
+    @DrawableRes logoRes: Int = R.drawable.logo_umy,
+    isCursive: Boolean = false
+) {
+    ProfileCard(
+        modifier = modifier,
+        name = stringResource(id = nameRes),
+        address = stringResource(id = addressRes),
+        backgroundColor = colorResource(id = bgCardColorRes),
+        addressColor = colorResource(id = addressColorRes),
+        phone = phoneRes?.let { stringResource(id = it) },
+        logoRes = logoRes,
+        isCursive = isCursive
+    )
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun YoungTugasPreview() {
+    TugasLayoutTheme {
+        TugasLayout()
+    }
+}
