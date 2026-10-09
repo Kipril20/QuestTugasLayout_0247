@@ -7,4 +7,23 @@
 
     <!-- Logo Description -->
     <string name="logo_umy_desc">Logo Universitas Muhammadiyah Yogyakarta</string>
+
+    <!-- Card 1 (Bambang Sumantri) -->
+    <string name="card_1_name">Bambang Sumantri</string>
+    <string name="card_1_location">Turi, Sleman</string>
+
+    <!-- Card 2 (Gibran Fathoni) -->
+    <string name="card_2_name">Gibran Fathoni</string>
+    <string name="card_2_phone">085436874190</string>
+    <string name="card_2_location">Kasihan, Bantul</string>
+
+    <!-- Card 3 (Zhilal Fadhilah) -->
+    <string name="card_3_name">Zhilal Fadhilah</string>
+    <string name="card_3_phone">085436874190</string>
+    <string name="card_3_location">Depok, Sleman</string>
+
+    <!-- Card 4 (Ahmad Alfian) -->
+    <string name="card_4_name">Ahmad Alfian</string>
+    <string name="card_4_phone">085436874190</string>
+    <string name="card_4_location">Gamping, Sleman</string>
 </resources>
