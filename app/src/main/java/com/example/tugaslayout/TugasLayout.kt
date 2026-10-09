@@ -34,4 +34,6 @@ fun TugasLayout(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center
             )
+
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacing_header_cards)))
 }
