@@ -104,3 +104,15 @@ fun TugasLayout(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Composable
+fun ProfileCard(
+    modifier: Modifier = Modifier,
+    name: String,
+    address: String,
+    backgroundColor: Color,
+    addressColor: Color,
+    phone: String? = null,
+    @DrawableRes logoRes: Int = R.drawable.logo_umy,
+    isCursive: Boolean = false
+) {}
