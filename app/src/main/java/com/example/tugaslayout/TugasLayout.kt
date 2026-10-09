@@ -76,4 +76,15 @@ fun TugasLayout(modifier: Modifier = Modifier) {
             )
 
             Spacer(modifier = Modifier.weight(1f))
+
+            Text(
+                text = stringResource(id = R.string.footer_copyright),
+                color = colorResource(id = R.color.footer_text_color),
+                fontSize = with(LocalDensity.current) { dimensionResource(id = R.dimen.text_size_footer).toSp() },
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_footer))
+            )
+        }
+    }
+}
         }
